@@ -427,6 +427,7 @@ class Image_SubFieldImage {
         }
 
         $imagickImage->setImageDepth($this->imageOptions['bitdepth']);
+        $imagickImage->setImageColorspace(IMagick::COLORSPACE_SRGB);
     }
 
     /**
